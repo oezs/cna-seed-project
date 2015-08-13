@@ -130,7 +130,7 @@ Dynamite:
       metric: response_time.time_backend_response.p95
       metric_aggregated: true
       comparative_operator: gt
-      threshold: 250
+      threshold: 1000
       threshold_unit: milli_second
       period: 15
       period_unit: second
