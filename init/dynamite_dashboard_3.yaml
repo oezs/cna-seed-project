@@ -31,8 +31,8 @@ Dynamite:
     zurmo_apache:
       name_of_unit_file: zurmo_apache@.service
       type: webserver
-      min_instance: 2
-      max_instance: 10
+      min_instance: 3
+      max_instance: 3
       base_instance_prefix_number: 8080
       ports_per_instance: 1
       attached_service:
