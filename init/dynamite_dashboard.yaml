@@ -104,8 +104,8 @@ Dynamite:
     zurmo_elasticsearch:
       name_of_unit_file: zurmo_elasticsearch@.service
       type: logstorage
-      min_instance: 1
-      max_instance: 2
+      min_instance: 2
+      max_instance: 3
       base_instance_prefix_number: 6000
       ports_per_instance: 1
       attached_service:
