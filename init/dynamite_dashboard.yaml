@@ -16,17 +16,29 @@ Dynamite:
     zurmo_config:
       name_of_unit_file: zurmo_config@.service
       type: attached_service
-    zurmo_mysql_demodata:
-      name_of_unit_file: zurmo_mysql_demodata@.service
+    zurmo_mysql_cluster:
+      name_of_unit_file: zurmo_mysql_cluster@.service
       type: database
       min_instance: 1
       max_instance: 1
       base_instance_prefix_number: 3306
       ports_per_instance: 1
       attached_service:
-        - zurmo_mysql_demodata_discovery
-    zurmo_mysql_demodata_discovery:
-      name_of_unit_file: zurmo_mysql_demodata_discovery@.service
+        - zurmo_mysql_cluster_discovery
+    zurmo_mysql_cluster_discovery:
+      name_of_unit_file: zurmo_mysql_cluster_discovery@.service
+      type: attached_service
+	zurmo_mysql_cluster_node:
+	  name_of_unit_file: zurmo_mysql_cluster_node@.service
+	  type: database
+	  min_instance: 1
+	  max_instance: 3
+	  base_instance_prefix_number: 3306
+	  ports_per_instance: 1
+	  attached_service:
+		- zurmo_mysql_cluster_node_discovery
+    zurmo_mysql_cluster_node_discovery:
+      name_of_unit_file: zurmo_mysql_cluster_node_discovery@.service
       type: attached_service
     zurmo_apache:
       name_of_unit_file: zurmo_apache@.service
