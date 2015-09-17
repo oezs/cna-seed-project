@@ -18,6 +18,10 @@ https://raw.githubusercontent.com/oezs/cna-seed-project/master/zurmo_memcache/fl
 https://raw.githubusercontent.com/oezs/cna-seed-project/master/zurmo_memcache/fleet/zurmo_memcache_discovery%40.service
 https://raw.githubusercontent.com/oezs/cna-seed-project/master/zurmo_mysql/fleet/zurmo_mysql%40.service
 https://raw.githubusercontent.com/oezs/cna-seed-project/master/zurmo_mysql/fleet/zurmo_mysql_discovery%40.service
+https://raw.githubusercontent.com/oezs/cna-seed-project/master/zurmo_mysql_cluster/fleet/zurmo_mysql_cluster%40.service
+https://raw.githubusercontent.com/oezs/cna-seed-project/master/zurmo_mysql_cluster/fleet/zurmo_mysql_discovery_cluster%40.service
+https://raw.githubusercontent.com/oezs/cna-seed-project/master/zurmo_mysql_cluster/fleet/zurmo_mysql_discovery_nodes_cluster%40.service
+https://raw.githubusercontent.com/oezs/cna-seed-project/master/zurmo_mysql_cluster/fleet/zurmo_mysql_nodes_cluster%40.service
 https://raw.githubusercontent.com/oezs/cna-seed-project/master/zurmo_mysql_demodata/fleet/zurmo_mysql_demodata%40.service
 https://raw.githubusercontent.com/oezs/cna-seed-project/master/zurmo_mysql_demodata/fleet/zurmo_mysql_demodata_discovery%40.service
 https://raw.githubusercontent.com/oezs/cna-seed-project/master/elasticdump/fleet/zurmo_elasticdump%40.service
