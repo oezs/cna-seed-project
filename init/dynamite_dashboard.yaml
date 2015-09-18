@@ -154,7 +154,7 @@ Dynamite:
       ports_per_instance: 1
       type: database
     zurmo_mysql_cluster_node_discovery: 
-      name_of_unit_file: zurmo_mysql_cluster_node_discovery@.service
+      name_of_unit_file: zurmo_mysql_cluster_discovery_node@.service
       type: attached_service
   ServiceFiles: 
     PathList: 
