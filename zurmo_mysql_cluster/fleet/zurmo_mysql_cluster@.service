@@ -14,6 +14,6 @@ KillMode=none
 Restart=always
 ExecStartPre=-/usr/bin/docker kill zurmo_mysql_cluster.%i
 ExecStartPre=-/usr/bin/docker rm zurmo_mysql_cluster.%i
-#ExecStartPre=/usr/bin/docker pull icclabcna/zurmo_mysql_cluster:${DOCKER_IMAGE_TAG}
-ExecStart=/usr/bin/docker run --name zurmo_mysql_cluster.%i -p %i:3306 oezs/zurmo_mysql_cluster:${DOCKER_IMAGE_TAG} -e "isPC=true"
+ExecStartPre=/usr/bin/docker pull oezs/zurmo_mysql_cluster:${DOCKER_IMAGE_TAG}
+ExecStart=/usr/bin/docker run --name zurmo_mysql_cluster.%i -p %i:3306 -e "isPC=true" oezs/zurmo_mysql_cluster:${DOCKER_IMAGE_TAG}
 ExecStop=/usr/bin/docker stop zurmo_mysql_cluster.%i
