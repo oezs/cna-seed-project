@@ -98,8 +98,8 @@
     },
     "ZurmoGitBranch" : {
       "Description" : "The name of an EC2 Key Pair to allow SSH access to the instance.",
-      "Default": "master",
-      "AllowedValues": ["master", "logging-dev", "aws"],
+      "Default": "latest",
+      "AllowedValues": ["master", "logging-dev", "latest"],
       "Type" : "String"
     }
   },
