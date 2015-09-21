@@ -13,7 +13,7 @@ RUN wget --no-check-certificate http://releases.galeracluster.com/ubuntu/pool/ma
 #RUN wget --no-check-certificate https://launchpad.net/galera/2.x/25.2.8/+download/galera-25.2.8-amd64.deb
 RUN wget --no-check-certificate http://releases.galeracluster.com/ubuntu/pool/main/g/galera-3/galera-3_25.3.12-1trusty_amd64.deb
 #RUN dpkg -i galera-25.2.8-amd64.deb
-RUN dpkg galera-3_25.3.12-1trusty_amd64.deb
+RUN dpkg -i galera-3_25.3.12-1trusty_amd64.deb
 
 #RUN dpkg -i mysql-server-wsrep-5.5.34-25.9-amd64.deb
 RUN dpkg -i mysql-wsrep-server-5.6_5.6.25-25.11-1trusty_amd64.deb
